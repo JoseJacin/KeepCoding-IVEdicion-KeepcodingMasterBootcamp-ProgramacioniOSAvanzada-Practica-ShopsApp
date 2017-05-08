@@ -7,12 +7,13 @@
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="gps_lat" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="gps_lon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="String" indexed="YES" syncable="YES"/>
         <attribute name="img" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="logo_img" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="telephone" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Shop" positionX="-54" positionY="-9" width="128" height="195"/>
+        <element name="Shop" positionX="-54" positionY="-9" width="128" height="210"/>
     </elements>
 </model>
