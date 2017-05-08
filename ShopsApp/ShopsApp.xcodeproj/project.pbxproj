@@ -72,14 +72,46 @@
 			isa = PBXGroup;
 			children = (
 				DFAE00D81EC0E13C00493399 /* AppDelegate.swift */,
-				DFAE00DA1EC0E13C00493399 /* ViewController.swift */,
-				DFAE00DC1EC0E13C00493399 /* Main.storyboard */,
-				DFAE00E21EC0E13C00493399 /* Assets.xcassets */,
-				DFAE00E41EC0E13C00493399 /* LaunchScreen.storyboard */,
+				DFAE00ED1EC0E19B00493399 /* Controller */,
+				DFAE00EE1EC0E1AC00493399 /* View */,
+				DFAE00EF1EC0E1C900493399 /* Model */,
+				DFAE00F01EC0E1D300493399 /* Assets */,
 				DFAE00E71EC0E13C00493399 /* Info.plist */,
-				DFAE00DF1EC0E13C00493399 /* ShopsApp.xcdatamodeld */,
 			);
 			path = ShopsApp;
+			sourceTree = "<group>";
+		};
+		DFAE00ED1EC0E19B00493399 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DFAE00DA1EC0E13C00493399 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DFAE00EE1EC0E1AC00493399 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFAE00DC1EC0E13C00493399 /* Main.storyboard */,
+				DFAE00E41EC0E13C00493399 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DFAE00EF1EC0E1C900493399 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DFAE00DF1EC0E13C00493399 /* ShopsApp.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DFAE00F01EC0E1D300493399 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DFAE00E21EC0E13C00493399 /* Assets.xcassets */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 		E4B6C9976A44AD4B5AD0255B /* Pods */ = {
@@ -383,6 +415,7 @@
 				DFAE00EC1EC0E13C00493399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
