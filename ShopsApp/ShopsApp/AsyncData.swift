@@ -14,7 +14,7 @@ import UIKit
 
 public
 class  AsyncData {
-    
+     
     var i = 0
     
     let url     : URL
