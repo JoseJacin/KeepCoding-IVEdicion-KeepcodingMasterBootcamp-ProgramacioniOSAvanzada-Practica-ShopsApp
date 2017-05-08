@@ -11,32 +11,22 @@ import CoreData
 
 extension Shop {
     //MARK: - Initialization
-    convenience init (id: String = "",
-                      name: String = "",
-                      address: String = "",
-                      telephone: String = "",
-                      email: String = "",
-                      gps_lat: String = "",
-                      gps_lon: String = "",
-                      img: String = "",
-                      logo_img: String = "",
-                      description_es: String = "",
-                      description_en: String = "",
-                      context: NSManagedObjectContext){
+    convenience init (json: JSONDictionary, context: NSManagedObjectContext){
+        
         let entity = NSEntityDescription.entity(forEntityName: Shop.entity().name!, in: context)!
         
         self.init(entity: entity, insertInto: context)
-        self.name = name
-        self.address = address
-        self.telephone = telephone
-        self.email = email
-        self.gps_lat = gps_lat
-        self.gps_lon = gps_lon
-        self.img = img
-        self.logo_img = logo_img
-        self.description_es = description_es
-        self.description_en = description_en
-        
+        self.id = json["id"] as? String ?? "0"
+        self.name = json["name"] as? String ?? ""
+        self.address = json["address"] as? String ?? ""
+        self.telephone = json["telephone"] as? String ?? ""
+        self.email = json["telephone"] as? String ?? ""
+        self.gps_lat = json["gps_lat"] as? String ?? ""
+        self.gps_lon = json["gps_lon"] as? String ?? ""
+        self.img = json["img"] as? String ?? ""
+        self.logo_img = json["logo_img"] as? String ?? ""
+        self.description_en = json["description_en"] as? String ?? ""
+        self.description_es = json["description_es"] as? String ?? ""
         saveContext(context: context)
     }
     
