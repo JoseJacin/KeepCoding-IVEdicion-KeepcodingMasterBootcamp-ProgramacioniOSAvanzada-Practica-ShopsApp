@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFAE00D91EC0E13C00493399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00D81EC0E13C00493399 /* AppDelegate.swift */; };
+		DFAE00DB1EC0E13C00493399 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00DA1EC0E13C00493399 /* ViewController.swift */; };
+		DFAE00DE1EC0E13C00493399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAE00DC1EC0E13C00493399 /* Main.storyboard */; };
+		DFAE00E11EC0E13C00493399 /* ShopsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00DF1EC0E13C00493399 /* ShopsApp.xcdatamodeld */; };
+		DFAE00E31EC0E13C00493399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFAE00E21EC0E13C00493399 /* Assets.xcassets */; };
+		DFAE00E61EC0E13C00493399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAE00E41EC0E13C00493399 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DFAE00D51EC0E13C00493399 /* ShopsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFAE00D81EC0E13C00493399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFAE00DA1EC0E13C00493399 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DFAE00DD1EC0E13C00493399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFAE00E01EC0E13C00493399 /* ShopsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShopsApp.xcdatamodel; sourceTree = "<group>"; };
+		DFAE00E21EC0E13C00493399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFAE00E51EC0E13C00493399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFAE00E71EC0E13C00493399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFAE00D21EC0E13C00493399 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFAE00CC1EC0E13C00493399 = {
+			isa = PBXGroup;
+			children = (
+				DFAE00D71EC0E13C00493399 /* ShopsApp */,
+				DFAE00D61EC0E13C00493399 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFAE00D61EC0E13C00493399 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFAE00D51EC0E13C00493399 /* ShopsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFAE00D71EC0E13C00493399 /* ShopsApp */ = {
+			isa = PBXGroup;
+			children = (
+				DFAE00D81EC0E13C00493399 /* AppDelegate.swift */,
+				DFAE00DA1EC0E13C00493399 /* ViewController.swift */,
+				DFAE00DC1EC0E13C00493399 /* Main.storyboard */,
+				DFAE00E21EC0E13C00493399 /* Assets.xcassets */,
+				DFAE00E41EC0E13C00493399 /* LaunchScreen.storyboard */,
+				DFAE00E71EC0E13C00493399 /* Info.plist */,
+				DFAE00DF1EC0E13C00493399 /* ShopsApp.xcdatamodeld */,
+			);
+			path = ShopsApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFAE00D41EC0E13C00493399 /* ShopsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFAE00EA1EC0E13C00493399 /* Build configuration list for PBXNativeTarget "ShopsApp" */;
+			buildPhases = (
+				DFAE00D11EC0E13C00493399 /* Sources */,
+				DFAE00D21EC0E13C00493399 /* Frameworks */,
+				DFAE00D31EC0E13C00493399 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShopsApp;
+			productName = ShopsApp;
+			productReference = DFAE00D51EC0E13C00493399 /* ShopsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFAE00CD1EC0E13C00493399 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Jose Sanchez Rodriguez";
+				TargetAttributes = {
+					DFAE00D41EC0E13C00493399 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6RPGGVZM93;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DFAE00D01EC0E13C00493399 /* Build configuration list for PBXProject "ShopsApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFAE00CC1EC0E13C00493399;
+			productRefGroup = DFAE00D61EC0E13C00493399 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFAE00D41EC0E13C00493399 /* ShopsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFAE00D31EC0E13C00493399 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFAE00E61EC0E13C00493399 /* LaunchScreen.storyboard in Resources */,
+				DFAE00E31EC0E13C00493399 /* Assets.xcassets in Resources */,
+				DFAE00DE1EC0E13C00493399 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFAE00D11EC0E13C00493399 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFAE00E11EC0E13C00493399 /* ShopsApp.xcdatamodeld in Sources */,
+				DFAE00DB1EC0E13C00493399 /* ViewController.swift in Sources */,
+				DFAE00D91EC0E13C00493399 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DFAE00DC1EC0E13C00493399 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFAE00DD1EC0E13C00493399 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFAE00E41EC0E13C00493399 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFAE00E51EC0E13C00493399 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFAE00E81EC0E13C00493399 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFAE00E91EC0E13C00493399 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFAE00EB1EC0E13C00493399 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6RPGGVZM93;
+				INFOPLIST_FILE = ShopsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JoseJacin.ShopsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DFAE00EC1EC0E13C00493399 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6RPGGVZM93;
+				INFOPLIST_FILE = ShopsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JoseJacin.ShopsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFAE00D01EC0E13C00493399 /* Build configuration list for PBXProject "ShopsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFAE00E81EC0E13C00493399 /* Debug */,
+				DFAE00E91EC0E13C00493399 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFAE00EA1EC0E13C00493399 /* Build configuration list for PBXNativeTarget "ShopsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFAE00EB1EC0E13C00493399 /* Debug */,
+				DFAE00EC1EC0E13C00493399 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DFAE00DF1EC0E13C00493399 /* ShopsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DFAE00E01EC0E13C00493399 /* ShopsApp.xcdatamodel */,
+			);
+			currentVersion = DFAE00E01EC0E13C00493399 /* ShopsApp.xcdatamodel */;
+			path = ShopsApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DFAE00CD1EC0E13C00493399 /* Project object */;
+}
