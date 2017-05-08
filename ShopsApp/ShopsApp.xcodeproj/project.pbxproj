@@ -14,6 +14,8 @@
 		DFAE00E11EC0E13C00493399 /* ShopsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00DF1EC0E13C00493399 /* ShopsApp.xcdatamodeld */; };
 		DFAE00E31EC0E13C00493399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFAE00E21EC0E13C00493399 /* Assets.xcassets */; };
 		DFAE00E61EC0E13C00493399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAE00E41EC0E13C00493399 /* LaunchScreen.storyboard */; };
+		DFAE00F31EC0E58C00493399 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00F21EC0E58C00493399 /* CoreDataManager.swift */; };
+		DFAE00F61EC0E74300493399 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00F51EC0E74300493399 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		DFAE00E21EC0E13C00493399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFAE00E51EC0E13C00493399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFAE00E71EC0E13C00493399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFAE00F21EC0E58C00493399 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		DFAE00F51EC0E74300493399 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EE1B945DD37B2CA3A19DCE25 /* Pods_ShopsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +79,8 @@
 				DFAE00ED1EC0E19B00493399 /* Controller */,
 				DFAE00EE1EC0E1AC00493399 /* View */,
 				DFAE00EF1EC0E1C900493399 /* Model */,
+				DFAE00F11EC0E57600493399 /* Manager */,
+				DFAE00F41EC0E73500493399 /* Utils */,
 				DFAE00F01EC0E1D300493399 /* Assets */,
 				DFAE00E71EC0E13C00493399 /* Info.plist */,
 			);
@@ -112,6 +118,22 @@
 				DFAE00E21EC0E13C00493399 /* Assets.xcassets */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		DFAE00F11EC0E57600493399 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DFAE00F21EC0E58C00493399 /* CoreDataManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		DFAE00F41EC0E73500493399 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DFAE00F51EC0E74300493399 /* Constants.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		E4B6C9976A44AD4B5AD0255B /* Pods */ = {
@@ -247,8 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFAE00F61EC0E74300493399 /* Constants.swift in Sources */,
 				DFAE00E11EC0E13C00493399 /* ShopsApp.xcdatamodeld in Sources */,
 				DFAE00DB1EC0E13C00493399 /* ViewController.swift in Sources */,
+				DFAE00F31EC0E58C00493399 /* CoreDataManager.swift in Sources */,
 				DFAE00D91EC0E13C00493399 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
