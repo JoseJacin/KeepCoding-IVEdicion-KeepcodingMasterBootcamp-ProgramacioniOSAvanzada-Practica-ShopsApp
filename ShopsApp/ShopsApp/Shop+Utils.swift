@@ -11,7 +11,7 @@ import CoreData
 
 extension Shop {
     //MARK: - Initialization
-    convenience init (json: JSONDictionary, context: NSManagedObjectContext){
+    convenience init (json: JSONDictionary, context: NSManagedObjectContext) {
         
         let entity = NSEntityDescription.entity(forEntityName: Shop.entity().name!, in: context)!
         
@@ -20,13 +20,13 @@ extension Shop {
         self.name = json["name"] as? String ?? ""
         self.address = json["address"] as? String ?? ""
         self.telephone = json["telephone"] as? String ?? ""
-        self.email = json["telephone"] as? String ?? ""
+        self.email = json["email"] as? String ?? ""
         self.gps_lat = json["gps_lat"] as? String ?? ""
         self.gps_lon = json["gps_lon"] as? String ?? ""
         self.img = json["img"] as? String ?? ""
         self.logo_img = json["logo_img"] as? String ?? ""
-        self.description_en = json["description_en"] as? String ?? ""
         self.description_es = json["description_es"] as? String ?? ""
+        self.description_en = json["description_en"] as? String ?? ""
         saveContext(context: context)
     }
     

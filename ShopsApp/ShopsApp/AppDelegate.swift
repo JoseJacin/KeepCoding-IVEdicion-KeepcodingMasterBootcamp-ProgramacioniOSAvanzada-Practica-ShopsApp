@@ -26,7 +26,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             fatalError("Unresolved error \(error), \(error.userInfo)")
         }
         
-        context = container.viewContext
+        self.context = container.viewContext
+        //NOTE: This command is used to see where the sqlite file is and to open the CoreData BDD with a specialized app, such as Datum
+        //print(container.persistentStoreDescriptions.first?.url ?? "")
+        
+        guard (loadJSONFromSandBox(context: context!)) else {
+            fatalError("Error download or parson JSON")
+        }
         
         return true
     }

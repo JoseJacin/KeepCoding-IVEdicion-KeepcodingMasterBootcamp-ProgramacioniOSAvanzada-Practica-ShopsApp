@@ -18,3 +18,10 @@ enum ShopError : Error {
     case jsonParsingError // Error al parsear el JSON
     
 }
+
+enum JSONErrors : Error{
+    case missingField(name:String)
+    case incorrectValue(name: String, value: String)
+    case emptyJSONObject
+    case emptyJSONArray
+}
