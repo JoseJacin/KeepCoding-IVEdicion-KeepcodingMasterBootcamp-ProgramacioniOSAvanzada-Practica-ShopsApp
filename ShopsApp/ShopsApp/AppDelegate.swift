@@ -19,20 +19,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        //
-        // Creamos un contexto
         // Persistent Container
         let container = persistentContainer(dbName: Constants.dbName) { (error: NSError) in
             fatalError("Unresolved error \(error), \(error.userInfo)")
         }
         
         self.context = container.viewContext
+        
         //NOTE: This command is used to see where the sqlite file is and to open the CoreData BDD with a specialized app, such as Datum
         //print(container.persistentStoreDescriptions.first?.url ?? "")
         
         guard (loadJSONFromSandBox(context: context!)) else {
             fatalError("Error download or parson JSON")
         }
+        
+        injectContextToFirstViewController()
         
         return true
     }
@@ -53,6 +54,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return
         }
         saveContext(context: context)
+    }
+    
+    
+    func injectContextToFirstViewController() {
+        if let navController = window?.rootViewController as? UINavigationController,
+            let initialViewController = navController.topViewController as? ShopsViewController {
+            initialViewController.context = self.context
+        }
     }
 }
 

@@ -10,7 +10,7 @@
 		8BE7B6FFC7CEFA0B65C527AE /* Pods_ShopsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1B945DD37B2CA3A19DCE25 /* Pods_ShopsApp.framework */; };
 		DF2950931EC1452700BC1479 /* ShopsViewController+NSFetchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2950921EC1452700BC1479 /* ShopsViewController+NSFetchResultController.swift */; };
 		DFAE00D91EC0E13C00493399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00D81EC0E13C00493399 /* AppDelegate.swift */; };
-		DFAE00DB1EC0E13C00493399 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00DA1EC0E13C00493399 /* ViewController.swift */; };
+		DFAE00DB1EC0E13C00493399 /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00DA1EC0E13C00493399 /* ShopsViewController.swift */; };
 		DFAE00DE1EC0E13C00493399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAE00DC1EC0E13C00493399 /* Main.storyboard */; };
 		DFAE00E11EC0E13C00493399 /* ShopsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00DF1EC0E13C00493399 /* ShopsApp.xcdatamodeld */; };
 		DFAE00E31EC0E13C00493399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFAE00E21EC0E13C00493399 /* Assets.xcassets */; };
@@ -29,7 +29,7 @@
 		DF2950921EC1452700BC1479 /* ShopsViewController+NSFetchResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopsViewController+NSFetchResultController.swift"; sourceTree = "<group>"; };
 		DFAE00D51EC0E13C00493399 /* ShopsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFAE00D81EC0E13C00493399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DFAE00DA1EC0E13C00493399 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DFAE00DA1EC0E13C00493399 /* ShopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
 		DFAE00DD1EC0E13C00493399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFAE00E01EC0E13C00493399 /* ShopsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShopsApp.xcdatamodel; sourceTree = "<group>"; };
 		DFAE00E21EC0E13C00493399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		DFAE00ED1EC0E19B00493399 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DFAE00DA1EC0E13C00493399 /* ViewController.swift */,
+				DFAE00DA1EC0E13C00493399 /* ShopsViewController.swift */,
 				DF2950921EC1452700BC1479 /* ShopsViewController+NSFetchResultController.swift */,
 			);
 			name = Controller;
@@ -287,7 +287,7 @@
 				DFAE00F81EC0EE7E00493399 /* AsyncData.swift in Sources */,
 				DFAE00F61EC0E74300493399 /* Constants.swift in Sources */,
 				DFAE00E11EC0E13C00493399 /* ShopsApp.xcdatamodeld in Sources */,
-				DFAE00DB1EC0E13C00493399 /* ViewController.swift in Sources */,
+				DFAE00DB1EC0E13C00493399 /* ShopsViewController.swift in Sources */,
 				DFAE00F31EC0E58C00493399 /* CoreDataManager.swift in Sources */,
 				DFAE00FA1EC0EF6900493399 /* JSONProcessing.swift in Sources */,
 				DFAE00D91EC0E13C00493399 /* AppDelegate.swift in Sources */,

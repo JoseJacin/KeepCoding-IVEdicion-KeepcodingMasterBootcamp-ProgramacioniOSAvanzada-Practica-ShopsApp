@@ -30,6 +30,22 @@ extension Shop {
         saveContext(context: context)
     }
     
+    // Función que recupera los primeros 20 registros y los ordena por Nombre (name)
+    //NOTE: Implemented in Everpobre Practice
+    class func fetchRequestOrderedByName() -> NSFetchRequest<Shop> {
+        let fetchRequest: NSFetchRequest<Shop> = Shop.fetchRequest()
+        fetchRequest.fetchBatchSize = 20
+        
+        // Edit the sort key as appropriate.
+        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        
+        // Se establece el orden de los resultados
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        return fetchRequest
+    }
+    
+    
     //MARK: - Proxies
     // Proxy para igualdad
     func proxyForEquiality() -> String {

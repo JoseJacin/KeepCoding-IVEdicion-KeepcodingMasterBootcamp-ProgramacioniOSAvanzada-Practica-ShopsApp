@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ShopsViewController.swift
 //  ShopsApp
 //
 //  Created by Jose Sanchez Rodriguez on 8/5/17.
@@ -8,18 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ShopsViewController: UIViewController {
+    
+    var context: NSManagedObjectContext?
+    var _fetchedResultsController: NSFetchedResultsController<Shop>? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    
-    
-    
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
