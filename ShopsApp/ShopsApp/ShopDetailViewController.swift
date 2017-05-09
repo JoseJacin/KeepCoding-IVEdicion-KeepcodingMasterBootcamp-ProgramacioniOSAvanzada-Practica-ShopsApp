@@ -12,10 +12,6 @@ import UIKit
 class ShopDetailViewController: UIViewController {
     //MARK: - Properties
     var shop: Shop? = nil
-    static let googleMapsImageAPI1 = "http://maps.googleapis.com/maps/api/staticmap?center="
-    static let googleMapsImageAPI2 = ","
-    static let googleMapsImageAPI3 = "&zoom=17&size=320x220&scale=2&markers=%7Ccolor:0x9C7B14%7C"
-    static let googleMapsImageAPI4 = ","
     
     //MARK: - Outlets
     @IBOutlet weak var descShop: UITextView!
@@ -45,7 +41,7 @@ class ShopDetailViewController: UIViewController {
         imageShop.image = UIImage(data: asyncData.data) // muestra la de ir tirando y empieza a descargar la buena
         
         
-        let googleMapsImgAPI = URL(string: "\(ShopDetailViewController.googleMapsImageAPI1)\((shop?.gps_lat)!)\(ShopDetailViewController.googleMapsImageAPI2)\((shop?.gps_lon)!)\(ShopDetailViewController.googleMapsImageAPI3)\((shop?.gps_lat)!)\(ShopDetailViewController.googleMapsImageAPI4)\((shop?.gps_lon)!)")
+        let googleMapsImgAPI = URL(string: "\(Constants.googleMapsImageAPI1)\((shop?.gps_lat)!)\(Constants.googleMapsImageAPI2)\((shop?.gps_lon)!)\(Constants.googleMapsImageAPI3)\((shop?.gps_lat)!)\(Constants.googleMapsImageAPI4)\((shop?.gps_lon)!)")
         
         let googleMapsImgAPIData = try! Data(contentsOf: googleMapsImgAPI!)
 

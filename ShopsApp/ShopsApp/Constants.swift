@@ -48,4 +48,10 @@ struct Constants {
     // Default languaje
     static let defaultLanguage = "es"
     static let secondLanguage = "en"
+    
+    //Google Maps Image API
+    static let googleMapsImageAPI1 = "http://maps.googleapis.com/maps/api/staticmap?center="
+    static let googleMapsImageAPI2 = ","
+    static let googleMapsImageAPI3 = "&zoom=17&size=320x220&scale=2&markers=%7Ccolor:0x9C7B14%7C"
+    static let googleMapsImageAPI4 = ","
 }

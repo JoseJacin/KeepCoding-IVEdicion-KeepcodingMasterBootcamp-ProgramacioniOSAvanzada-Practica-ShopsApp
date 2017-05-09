@@ -1,5 +1,5 @@
 //
-//  ShopsViewController.swift
+//  ShopsViewController+NSFetchResultController.swift
 //  ShopsApp
 //
 //  Created by Jose Sanchez Rodriguez on 9/5/17.
