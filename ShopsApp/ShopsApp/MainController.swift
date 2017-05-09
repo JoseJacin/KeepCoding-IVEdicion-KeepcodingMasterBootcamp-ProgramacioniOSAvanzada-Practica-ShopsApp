@@ -12,7 +12,7 @@ import UIKit
 class MainController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
-            if identifier == "ShopMainScreen" {
+            if identifier == Constants.ShopMainScreen {
                 let _ = segue.destination as! ShopsViewController
             }
         }

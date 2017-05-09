@@ -24,7 +24,7 @@ extension ShopsViewController: UITableViewDelegate, UITableViewDataSource {
     
     // Función que retorna el item sobre el que se está realizando una acción
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ShopCell", for: indexPath) as! ShopTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.ShopCell, for: indexPath) as! ShopTableViewCell
         cell.shop = self.fetchedResultsController.object(at: indexPath)
         //cell.context = self.context
         return cell

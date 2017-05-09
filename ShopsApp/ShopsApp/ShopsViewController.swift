@@ -48,7 +48,7 @@ class ShopsViewController: UIViewController {
         if let identifier = segue.identifier {
             switch identifier
             {
-            case "ShopDetailScreen":
+            case Constants.ShopDetailScreen:
                 let selectedIndex = tableShopsView.indexPathForSelectedRow
                 let shop = fetchedResultsController.object(at: selectedIndex!)
                 let vc = segue.destination as! ShopDetailViewController

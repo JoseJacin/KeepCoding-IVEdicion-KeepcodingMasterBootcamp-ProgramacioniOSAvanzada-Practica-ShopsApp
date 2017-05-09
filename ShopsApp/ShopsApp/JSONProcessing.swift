@@ -10,10 +10,6 @@ import UIKit
 import Foundation
 import CoreData
 
-//MARK: - Constants
-let urlFileJSON : String = "https://madrid-shops.com/json_new/getShops.php"
-let shopJSONDataKey = "ShopJSONDataKey"
-
 //MARK: - Aliases
 // El protocolo AnyObject representa cualquier objeto que sea compatible con Objective C.
 typealias JSONObject        = AnyObject;
@@ -41,10 +37,10 @@ func getMyDocumentsURL() -> URL {
 func downloadAndSaveJSONFile() throws -> Data {
 
     // Se comprueba si la aplicación se ha ejecutado anteriormente en algún momento mediante la carga del fichero desde NSUserDefaults
-    guard let shopJSONData: Data = UserDefaults.standard.data(forKey: shopJSONDataKey) else {
+    guard let shopJSONData: Data = UserDefaults.standard.data(forKey: Constants.shopJSONDataKey) else {
         // No se ha podido obtener el fichero JSON, por lo que se procede a su descarga
         // Se recupera la URL del JSON
-        guard let jsonUrl = URL(string: urlFileJSON) else {
+        guard let jsonUrl = URL(string: Constants.urlFileJSON) else {
             throw ShopError.wrongURLFormatForJSONResource
         }
         
@@ -54,7 +50,7 @@ func downloadAndSaveJSONFile() throws -> Data {
         }
         
         // Se almacena el fichero JSON en NSUserDefaults
-        UserDefaults.standard.set(jsonDownloadedData, forKey: shopJSONDataKey)
+        UserDefaults.standard.set(jsonDownloadedData, forKey: Constants.shopJSONDataKey)
         
         // Se retorna el fichero JSON
         return jsonDownloadedData
@@ -82,7 +78,7 @@ func loadJSONFromSandBox(context: NSManagedObjectContext) -> Bool {
 
     }
     
-    guard let maybeArray = dictionary["result"] as? JSONArray else {
+    guard let maybeArray = dictionary[Constants.result] as? JSONArray else {
         fatalError(ShopError.wrongJSONFormat.localizedDescription)
 
     }

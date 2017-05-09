@@ -29,7 +29,7 @@ class ShopTableViewCell: UITableViewCell {
             
             nameShopView.text = newValue.name?.uppercased()
             
-            let defaultImageAsData = try! Data(contentsOf: Bundle.main.url(forResource: "Shop-Default", withExtension: "png")!)
+            let defaultImageAsData = try! Data(contentsOf: Bundle.main.url(forResource: Constants.ShopImageDefault, withExtension: Constants.PngExtension)!)
             
             let asyncData = AsyncData(url: URL(string: newValue.logo_img!)!, defaultData: defaultImageAsData)
             

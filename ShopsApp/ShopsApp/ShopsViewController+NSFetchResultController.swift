@@ -20,7 +20,7 @@ extension ShopsViewController: NSFetchedResultsControllerDelegate {
         
         // Edit the section name key path and cache name if appropriate.
         // nil for section name key path means "no sections".
-        _fetchedResultsController = NSFetchedResultsController(fetchRequest: Shop.fetchRequestOrderedByName(), managedObjectContext: self.context!, sectionNameKeyPath: nil, cacheName: "Master")
+        _fetchedResultsController = NSFetchedResultsController(fetchRequest: Shop.fetchRequestOrderedByName(), managedObjectContext: self.context!, sectionNameKeyPath: nil, cacheName: Constants.CacheMaster)
         _fetchedResultsController?.delegate = self
         
         do {
