@@ -28,9 +28,9 @@ class ShopDetailViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = shop?.name
-        if (Locale.current.languageCode! == "es") {
+        if (Locale.current.languageCode! == Constants.defaultLanguage) {
             descShop.text = shop?.description_es
-        } else if (Locale.current.languageCode! == "en") {
+        } else if (Locale.current.languageCode! == Constants.secondLanguage) {
             descShop.text = shop?.description_en
         }
         

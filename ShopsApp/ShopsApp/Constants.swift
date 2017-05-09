@@ -44,4 +44,8 @@ struct Constants {
     static let urlFileJSON = "https://madrid-shops.com/json_new/getShops.php"
     static let shopJSONDataKey = "ShopJSONDataKey"
     static let result = "result"
+    
+    // Default languaje
+    static let defaultLanguage = "es"
+    static let secondLanguage = "en"
 }
