@@ -27,6 +27,10 @@ extension Shop {
         self.logo_img = json["logo_img"] as? String ?? ""
         self.description_es = json["description_es"] as? String ?? ""
         self.description_en = json["description_en"] as? String ?? ""
+        
+        self.gps_lat = self.gps_lat?.trimmingCharacters(in: .whitespaces)
+        self.gps_lon = self.gps_lon?.trimmingCharacters(in: .whitespaces)
+
         saveContext(context: context)
     }
     
