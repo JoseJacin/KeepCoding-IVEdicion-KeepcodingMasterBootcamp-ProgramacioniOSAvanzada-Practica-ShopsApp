@@ -12,14 +12,36 @@ import CoreData
 
 //NOTE: Implemented in Everpobre Practice
 extension ShopsViewController: NSFetchedResultsControllerDelegate {
+    // MARK: - Fetched results controller
+    var fetchedResultsController: NSFetchedResultsController<Shop> {
+        if _fetchedResultsController != nil {
+            return _fetchedResultsController!
+        }
+        
+        // Edit the section name key path and cache name if appropriate.
+        // nil for section name key path means "no sections".
+        _fetchedResultsController = NSFetchedResultsController(fetchRequest: Shop.fetchRequestOrderedByName(), managedObjectContext: self.context!, sectionNameKeyPath: nil, cacheName: "Master")
+        _fetchedResultsController?.delegate = self
+        
+        do {
+            // Descarga el primer bloque de registros (20)
+            try _fetchedResultsController!.performFetch()
+        } catch {
+            let nserror = error as NSError
+            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+        }
+        
+        return _fetchedResultsController!
+    }
+    
     // Función que se ejecuta cuando se crea/elimina una sección (groupBy) en el fetchedresultsController
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, atSectionIndex sectionIndex: Int, for type: NSFetchedResultsChangeType) {
         // Se actualiza la tableView
         switch type {
-        //case .insert:
-            //self.collectionView.insertSections(IndexSet(integer: sectionIndex))
-        //case .delete:
-            //self.collectionView.deleteSections(IndexSet(integer: sectionIndex))
+        case .insert:
+            self.tableShopsView.insertSections(IndexSet(integer: sectionIndex), with: .top)
+        case .delete:
+            self.tableShopsView.deleteSections(IndexSet(integer: sectionIndex), with: .top)
         default:
             return
         }
@@ -28,13 +50,12 @@ extension ShopsViewController: NSFetchedResultsControllerDelegate {
     // Función que se ejecuta cuando una sección se ha modificado (insert/delete/update/move) un registro en el contexto
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
         switch type {
-       // case .insert:
-            //collectionView.insertItems(at: [newIndexPath!])
-       // case .delete:
-            //collectionView.deleteItems(at: [indexPath!])
+        case .insert:
+            self.tableShopsView.insertRows(at: [newIndexPath!], with: .top)
+        case .delete:
+            self.tableShopsView.deleteRows(at: [indexPath!], with: .top)
         default:
             break
-            //self.configureCell(collectionView.cellForRow(at: indexPath!)!, withEvent: anObject as! Event)
         }
     }
 }
