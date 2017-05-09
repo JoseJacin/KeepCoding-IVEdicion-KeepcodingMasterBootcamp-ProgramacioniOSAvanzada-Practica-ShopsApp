@@ -31,6 +31,7 @@ class ShopsViewController: UIViewController {
         tableShopsView.dataSource = self
         fetchedResultsController.delegate = self
         
+        addLocationsInMap()
     }
     
     override func didReceiveMemoryWarning() {
