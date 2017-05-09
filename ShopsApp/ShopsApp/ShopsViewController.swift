@@ -43,6 +43,22 @@ class ShopsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }    
     
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            switch identifier
+            {
+            case "ShopDetailScreen":
+                let selectedIndex = tableShopsView.indexPathForSelectedRow
+                let shop = fetchedResultsController.object(at: selectedIndex!)
+                let vc = segue.destination as! ShopDetailViewController
+                vc.shop = shop
+            default:
+                break
+            }
+        }
+    }
+    
 }
 
 

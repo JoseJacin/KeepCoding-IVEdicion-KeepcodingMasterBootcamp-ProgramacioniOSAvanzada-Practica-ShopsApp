@@ -31,7 +31,6 @@ class ShopTableViewCell: UITableViewCell {
             
             let defaultImageAsData = try! Data(contentsOf: Bundle.main.url(forResource: "Shop-Default", withExtension: "png")!)
             
-            
             let asyncData = AsyncData(url: URL(string: newValue.logo_img!)!, defaultData: defaultImageAsData)
             
             asyncData.delegate = self

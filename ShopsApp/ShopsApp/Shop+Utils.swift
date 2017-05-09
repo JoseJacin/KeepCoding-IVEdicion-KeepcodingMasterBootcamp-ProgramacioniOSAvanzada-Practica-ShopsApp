@@ -37,7 +37,7 @@ extension Shop {
         fetchRequest.fetchBatchSize = 20
         
         // Edit the sort key as appropriate.
-        let sortDescriptor = NSSortDescriptor(key: "id", ascending: true)
+        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
         
         // Se establece el orden de los resultados
         fetchRequest.sortDescriptors = [sortDescriptor]
