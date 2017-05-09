@@ -20,6 +20,10 @@ class ShopsViewController: UIViewController {
     @IBOutlet weak var mapShopsView: MKMapView!
     @IBOutlet weak var tableShopsView: UITableView!
     
+    //MARK: - Location
+    var locationManager : CLLocationManager?
+    var location: MapPin?
+    
     //MARK: - Functions
     override func viewDidLoad() {
         super.viewDidLoad()

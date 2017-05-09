@@ -27,6 +27,7 @@
 		DFAE00FA1EC0EF6900493399 /* JSONProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00F91EC0EF6900493399 /* JSONProcessing.swift */; };
 		DFAE00FC1EC0F15200493399 /* Shop+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00FB1EC0F15200493399 /* Shop+Utils.swift */; };
 		DFAE00FE1EC10D0F00493399 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00FD1EC10D0F00493399 /* Errors.swift */; };
+		DFF1C8311EC1981A0077135C /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1C8301EC1981A0077135C /* MapPin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		DFAE00F91EC0EF6900493399 /* JSONProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONProcessing.swift; sourceTree = "<group>"; };
 		DFAE00FB1EC0F15200493399 /* Shop+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shop+Utils.swift"; sourceTree = "<group>"; };
 		DFAE00FD1EC10D0F00493399 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		DFF1C8301EC1981A0077135C /* MapPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
 		EE1B945DD37B2CA3A19DCE25 /* Pods_ShopsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				DFAE00F51EC0E74300493399 /* Constants.swift */,
+				DFF1C8301EC1981A0077135C /* MapPin.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				DFAE00DB1EC0E13C00493399 /* ShopsViewController.swift in Sources */,
 				DFAE00F31EC0E58C00493399 /* CoreDataManager.swift in Sources */,
 				DFAE00FA1EC0EF6900493399 /* JSONProcessing.swift in Sources */,
+				DFF1C8311EC1981A0077135C /* MapPin.swift in Sources */,
 				DFAE00D91EC0E13C00493399 /* AppDelegate.swift in Sources */,
 				DF7934521EC167D300132133 /* ShopsViewController+UITableView.swift in Sources */,
 				DFAE00FE1EC10D0F00493399 /* Errors.swift in Sources */,

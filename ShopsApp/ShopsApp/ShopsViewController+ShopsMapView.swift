@@ -9,6 +9,7 @@
 import Foundation
 import MapKit
 
+//NOTE: Implemented in Map Hello World
 extension ShopsViewController: CLLocationManagerDelegate {
     //Load all annotations with location to the map
     func addLocationsInMap(){
@@ -21,9 +22,11 @@ extension ShopsViewController: CLLocationManagerDelegate {
                 let shop : Shop = each as Shop
                 
                 if let lng: CLLocationDegrees = Double(shop.gps_lat!),
-                    let lat: CLLocationDegrees = Double(shop.gps_lat!){
-                    let coordinate = CLLocationCoordinate2DMake(lat, lng)
-                    self.mapShopsView.addAnnotation(coordinate as! MKAnnotation)
+                    let lat: CLLocationDegrees = Double(shop.gps_lon!){
+                    let annotation: MapPin = MapPin.init(coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lng))
+                    annotation.title = shop.name
+                    annotation.subtitle = ""
+                    self.mapShopsView.addAnnotation(annotation)
                 }
             }
         }
@@ -32,6 +35,6 @@ extension ShopsViewController: CLLocationManagerDelegate {
         
         let region = MKCoordinateRegion(center: madridLocation.coordinate, span: MKCoordinateSpanMake(0.2, 0.2))
         
-        mapShopsView.setRegion(region, animated: true)
+        self.mapShopsView.setRegion(region, animated: true)
     }
 }
