@@ -20,11 +20,108 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zx-Kj-xqd">
+                                <rect key="frame" x="164" y="318" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="KHJ-Ft-jZw" kind="show" id="Oij-E8-Uxo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+        </scene>
+        <!--Shops App-->
+        <scene sceneID="CFb-fr-RI9">
+            <objects>
+                <viewController id="3CS-N3-5xy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JbL-9B-dpF"/>
+                        <viewControllerLayoutGuide type="bottom" id="uNY-0b-PBR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Aa9-ak-rwK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Q4Y-1N-EYC">
+                                <rect key="frame" x="0.0" y="64" width="375" height="207"/>
+                            </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i5m-1T-Tkh" userLabel="Shops List View">
+                                <rect key="frame" x="0.0" y="270" width="375" height="397"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ShopCell" id="i33-Vz-3fL" userLabel="Shop Cell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i33-Vz-3fL" id="Vgd-sf-9Nh" userLabel="Shop Content View Cell">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uSA-T1-wBt" userLabel="Logo Shop">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICL-SX-9LM" userLabel="Name Shop">
+                                                    <rect key="frame" x="161.5" y="9.5" width="52.5" height="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uSA-T1-wBt" firstAttribute="leading" secondItem="Vgd-sf-9Nh" secondAttribute="leading" id="964-kk-IY0"/>
+                                                <constraint firstItem="ICL-SX-9LM" firstAttribute="centerY" secondItem="uSA-T1-wBt" secondAttribute="centerY" id="9nb-gJ-gef"/>
+                                                <constraint firstAttribute="trailing" secondItem="uSA-T1-wBt" secondAttribute="trailing" id="Mea-QR-B5L"/>
+                                                <constraint firstItem="ICL-SX-9LM" firstAttribute="centerX" secondItem="uSA-T1-wBt" secondAttribute="centerX" id="TvH-No-Fpb"/>
+                                                <constraint firstItem="uSA-T1-wBt" firstAttribute="top" secondItem="Vgd-sf-9Nh" secondAttribute="top" id="Yyd-3C-dUd"/>
+                                                <constraint firstItem="uSA-T1-wBt" firstAttribute="centerY" secondItem="Vgd-sf-9Nh" secondAttribute="centerY" id="ytA-9K-qYa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i5m-1T-Tkh" firstAttribute="trailing" secondItem="Q4Y-1N-EYC" secondAttribute="trailing" id="0V3-sX-jvd"/>
+                            <constraint firstItem="Q4Y-1N-EYC" firstAttribute="top" secondItem="JbL-9B-dpF" secondAttribute="bottom" id="Hza-D8-S6Q"/>
+                            <constraint firstAttribute="trailing" secondItem="Q4Y-1N-EYC" secondAttribute="trailing" id="L5v-ta-c9l"/>
+                            <constraint firstItem="i5m-1T-Tkh" firstAttribute="bottom" secondItem="uNY-0b-PBR" secondAttribute="top" id="TAZ-5b-nnl"/>
+                            <constraint firstItem="i5m-1T-Tkh" firstAttribute="top" secondItem="Q4Y-1N-EYC" secondAttribute="bottom" constant="-1" id="ZMP-e0-FcK"/>
+                            <constraint firstItem="uNY-0b-PBR" firstAttribute="top" secondItem="Q4Y-1N-EYC" secondAttribute="bottom" constant="396" id="at3-uc-Pch"/>
+                            <constraint firstItem="Q4Y-1N-EYC" firstAttribute="leading" secondItem="Aa9-ak-rwK" secondAttribute="leading" id="fMb-e2-M5c"/>
+                            <constraint firstItem="i5m-1T-Tkh" firstAttribute="leading" secondItem="Q4Y-1N-EYC" secondAttribute="leading" id="xoT-7B-IcM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Shops App" id="anM-7e-Q10"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4V7-se-41t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852" y="135.38230884557723"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OvU-YT-QbY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KHJ-Ft-jZw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QcQ-Oj-MEx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3CS-N3-5xy" kind="relationship" relationship="rootViewController" id="3gC-c9-DeG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CxU-ef-RDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975" y="136"/>
         </scene>
     </scenes>
 </document>
