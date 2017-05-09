@@ -12,7 +12,6 @@
 		DF7934501EC15F7E00132133 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF79344F1EC15F7E00132133 /* MapKit.framework */; };
 		DF7934521EC167D300132133 /* ShopsViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7934511EC167D300132133 /* ShopsViewController+UITableView.swift */; };
 		DF7934561EC169CA00132133 /* ShopsViewController+ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7934551EC169CA00132133 /* ShopsViewController+ShopTableViewCell.swift */; };
-		DF7934591EC1787D00132133 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7934581EC1787D00132133 /* MainController.swift */; };
 		DF79345B1EC1975400132133 /* Shop-Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DF79345A1EC1975400132133 /* Shop-Default.png */; };
 		DF79345F1EC1A38900132133 /* ShopsViewController+ShopsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF79345E1EC1A38900132133 /* ShopsViewController+ShopsMapView.swift */; };
 		DFAE00D91EC0E13C00493399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00D81EC0E13C00493399 /* AppDelegate.swift */; };
@@ -38,7 +37,6 @@
 		DF79344F1EC15F7E00132133 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DF7934511EC167D300132133 /* ShopsViewController+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopsViewController+UITableView.swift"; sourceTree = "<group>"; };
 		DF7934551EC169CA00132133 /* ShopsViewController+ShopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopsViewController+ShopTableViewCell.swift"; sourceTree = "<group>"; };
-		DF7934581EC1787D00132133 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		DF79345A1EC1975400132133 /* Shop-Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shop-Default.png"; sourceTree = "<group>"; };
 		DF79345E1EC1A38900132133 /* ShopsViewController+ShopsMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopsViewController+ShopsMapView.swift"; sourceTree = "<group>"; };
 		DFAE00D51EC0E13C00493399 /* ShopsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,14 +92,6 @@
 			name = ShopsViewController;
 			sourceTree = "<group>";
 		};
-		DF7934571EC1786900132133 /* MainController */ = {
-			isa = PBXGroup;
-			children = (
-				DF7934581EC1787D00132133 /* MainController.swift */,
-			);
-			name = MainController;
-			sourceTree = "<group>";
-		};
 		DFAE00CC1EC0E13C00493399 = {
 			isa = PBXGroup;
 			children = (
@@ -138,7 +128,6 @@
 		DFAE00ED1EC0E19B00493399 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DF7934571EC1786900132133 /* MainController */,
 				DF7934531EC1697100132133 /* ShopsViewController */,
 				DFB9B7051EC19DA3008CD29E /* ShopDetailViewController */,
 			);
@@ -353,7 +342,6 @@
 				DF2950931EC1452700BC1479 /* ShopsViewController+NSFetchResultController.swift in Sources */,
 				DF79345F1EC1A38900132133 /* ShopsViewController+ShopsMapView.swift in Sources */,
 				DFAE00FC1EC0F15200493399 /* Shop+Utils.swift in Sources */,
-				DF7934591EC1787D00132133 /* MainController.swift in Sources */,
 				DF7934561EC169CA00132133 /* ShopsViewController+ShopTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

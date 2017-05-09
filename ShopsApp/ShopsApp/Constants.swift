@@ -14,8 +14,8 @@ struct Constants {
     static let entity = "Shop"
     
     //MARK: - Segues
-    // Main Menu Screen
-    static let ShopMainScreen = "ShopMainScreen"
+    // Shop Detail Screen
+    static let ShopDetailScreen = "ShopDetailScreen"
     
     //MARK: - Shop
     static let id = "id"
@@ -32,9 +32,6 @@ struct Constants {
     
     // Shops Screen
     static let ShopCell = "ShopCell"
-    
-    // Shop Detail Screen
-    static let ShopDetailScreen = "ShopDetailScreen"
     
     // Cache
     static let CacheMaster = "Master"

@@ -17,6 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        func loadingViewController(){
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let loadController: UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "MainController")
+            
+            self.window?.rootViewController = loadController
+        }
+        
         // Override point for customization after application launch.
         
         // Persistent Container
