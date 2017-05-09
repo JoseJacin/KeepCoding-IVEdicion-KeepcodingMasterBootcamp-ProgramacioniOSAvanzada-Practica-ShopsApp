@@ -14,6 +14,7 @@
 		DF7934561EC169CA00132133 /* ShopsViewController+ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7934551EC169CA00132133 /* ShopsViewController+ShopTableViewCell.swift */; };
 		DF7934591EC1787D00132133 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7934581EC1787D00132133 /* MainController.swift */; };
 		DF79345B1EC1975400132133 /* Shop-Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DF79345A1EC1975400132133 /* Shop-Default.png */; };
+		DF79345F1EC1A38900132133 /* ShopsViewController+ShopsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF79345E1EC1A38900132133 /* ShopsViewController+ShopsMapView.swift */; };
 		DFAE00D91EC0E13C00493399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00D81EC0E13C00493399 /* AppDelegate.swift */; };
 		DFAE00DB1EC0E13C00493399 /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00DA1EC0E13C00493399 /* ShopsViewController.swift */; };
 		DFAE00DE1EC0E13C00493399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAE00DC1EC0E13C00493399 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		DF7934551EC169CA00132133 /* ShopsViewController+ShopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopsViewController+ShopTableViewCell.swift"; sourceTree = "<group>"; };
 		DF7934581EC1787D00132133 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		DF79345A1EC1975400132133 /* Shop-Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shop-Default.png"; sourceTree = "<group>"; };
+		DF79345E1EC1A38900132133 /* ShopsViewController+ShopsMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopsViewController+ShopsMapView.swift"; sourceTree = "<group>"; };
 		DFAE00D51EC0E13C00493399 /* ShopsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFAE00D81EC0E13C00493399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFAE00DA1EC0E13C00493399 /* ShopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				DF2950921EC1452700BC1479 /* ShopsViewController+NSFetchResultController.swift */,
 				DF7934511EC167D300132133 /* ShopsViewController+UITableView.swift */,
 				DF7934551EC169CA00132133 /* ShopsViewController+ShopTableViewCell.swift */,
+				DF79345E1EC1A38900132133 /* ShopsViewController+ShopsMapView.swift */,
 			);
 			name = ShopsViewController;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				DF7934521EC167D300132133 /* ShopsViewController+UITableView.swift in Sources */,
 				DFAE00FE1EC10D0F00493399 /* Errors.swift in Sources */,
 				DF2950931EC1452700BC1479 /* ShopsViewController+NSFetchResultController.swift in Sources */,
+				DF79345F1EC1A38900132133 /* ShopsViewController+ShopsMapView.swift in Sources */,
 				DFAE00FC1EC0F15200493399 /* Shop+Utils.swift in Sources */,
 				DF7934591EC1787D00132133 /* MainController.swift in Sources */,
 				DF7934561EC169CA00132133 /* ShopsViewController+ShopTableViewCell.swift in Sources */,

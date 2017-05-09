@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -68,7 +69,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICL-SX-9LM" userLabel="Name Shop">
-                                                    <rect key="frame" x="161.5" y="9.5" width="52.5" height="24"/>
+                                                    <rect key="frame" x="13" y="10" width="52.5" height="24"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -78,7 +79,7 @@
                                                 <constraint firstItem="uSA-T1-wBt" firstAttribute="leading" secondItem="Vgd-sf-9Nh" secondAttribute="leading" id="964-kk-IY0"/>
                                                 <constraint firstItem="ICL-SX-9LM" firstAttribute="centerY" secondItem="uSA-T1-wBt" secondAttribute="centerY" id="9nb-gJ-gef"/>
                                                 <constraint firstAttribute="trailing" secondItem="uSA-T1-wBt" secondAttribute="trailing" id="Mea-QR-B5L"/>
-                                                <constraint firstItem="ICL-SX-9LM" firstAttribute="centerX" secondItem="uSA-T1-wBt" secondAttribute="centerX" id="TvH-No-Fpb"/>
+                                                <constraint firstItem="ICL-SX-9LM" firstAttribute="leading" secondItem="Vgd-sf-9Nh" secondAttribute="leadingMargin" constant="5" id="SeW-qD-icF"/>
                                                 <constraint firstItem="uSA-T1-wBt" firstAttribute="top" secondItem="Vgd-sf-9Nh" secondAttribute="top" id="Yyd-3C-dUd"/>
                                                 <constraint firstItem="uSA-T1-wBt" firstAttribute="centerY" secondItem="Vgd-sf-9Nh" secondAttribute="centerY" id="ytA-9K-qYa"/>
                                             </constraints>
