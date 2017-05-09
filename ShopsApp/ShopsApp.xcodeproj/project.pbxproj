@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8BE7B6FFC7CEFA0B65C527AE /* Pods_ShopsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1B945DD37B2CA3A19DCE25 /* Pods_ShopsApp.framework */; };
+		DF2950931EC1452700BC1479 /* ShopsViewController+NSFetchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2950921EC1452700BC1479 /* ShopsViewController+NSFetchResultController.swift */; };
 		DFAE00D91EC0E13C00493399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00D81EC0E13C00493399 /* AppDelegate.swift */; };
 		DFAE00DB1EC0E13C00493399 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE00DA1EC0E13C00493399 /* ViewController.swift */; };
 		DFAE00DE1EC0E13C00493399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAE00DC1EC0E13C00493399 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		11074BB20F045566859C45E7 /* Pods-ShopsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShopsApp/Pods-ShopsApp.release.xcconfig"; sourceTree = "<group>"; };
 		7331B5AC3247570927E67BE6 /* Pods-ShopsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShopsApp/Pods-ShopsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DF2950921EC1452700BC1479 /* ShopsViewController+NSFetchResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopsViewController+NSFetchResultController.swift"; sourceTree = "<group>"; };
 		DFAE00D51EC0E13C00493399 /* ShopsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFAE00D81EC0E13C00493399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFAE00DA1EC0E13C00493399 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				DFAE00DA1EC0E13C00493399 /* ViewController.swift */,
+				DF2950921EC1452700BC1479 /* ShopsViewController+NSFetchResultController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				DFAE00FA1EC0EF6900493399 /* JSONProcessing.swift in Sources */,
 				DFAE00D91EC0E13C00493399 /* AppDelegate.swift in Sources */,
 				DFAE00FE1EC10D0F00493399 /* Errors.swift in Sources */,
+				DF2950931EC1452700BC1479 /* ShopsViewController+NSFetchResultController.swift in Sources */,
 				DFAE00FC1EC0F15200493399 /* Shop+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

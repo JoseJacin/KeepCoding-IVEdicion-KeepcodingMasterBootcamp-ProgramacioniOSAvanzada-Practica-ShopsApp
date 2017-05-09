@@ -11,4 +11,5 @@ import Foundation
 struct Constants {
     //MARK: - Database
     static let dbName = "ShopsApp"
+    static let entity = "Shop"
 }

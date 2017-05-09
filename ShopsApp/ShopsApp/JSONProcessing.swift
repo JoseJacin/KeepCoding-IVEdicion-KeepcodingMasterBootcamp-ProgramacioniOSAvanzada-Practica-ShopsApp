@@ -67,15 +67,15 @@ func downloadAndSaveJSONFile() throws -> Data {
 //MARK: - Loading JSON from local file (SandBox)
 // Función que carga un fichero en local y retorna un array de JSON
 func loadJSONFromSandBox(context: NSManagedObjectContext) -> Bool {
-        // Se carga el fichero desde NSUserDefauls
-        guard let jsonData = try? downloadAndSaveJSONFile() else {
-            fatalError("Unable to download or parse a JSON file")
-        }
+    // Se carga el fichero desde NSUserDefauls
+    guard let jsonData = try? downloadAndSaveJSONFile() else {
+        fatalError("Unable to download or parse a JSON file")
+    }
 
-        // Se descarga la información del fichero JSON y se parsea a un array de JSON
+    // Se descarga la información del fichero JSON y se parsea a un array de JSON
     guard let root = try? JSONSerialization.jsonObject(with: jsonData, options: []) else {
-                fatalError(ShopError.wrongJSONFormat.localizedDescription)
-        }
+        fatalError(ShopError.wrongJSONFormat.localizedDescription)
+    }
 
     guard let dictionary = root as? JSONDictionary else {
         fatalError(ShopError.wrongJSONFormat.localizedDescription)
@@ -87,10 +87,19 @@ func loadJSONFromSandBox(context: NSManagedObjectContext) -> Bool {
 
     }
     
-        guard let _ = try? decodes(shops: maybeArray, context: context) else {
-            fatalError("Unable to decode a JSON")
-        }
-        return true
+    //NOTE: To avoid duplicate records, you can either delete the BDD or check that the record exists.
+    // At this time, by time, I have opted to delete the contents of the BDD. Later I will implement a method that controls if the document already exists
+    deleteAllRecords(entity: Constants.entity, context: context)
+    
+    
+    guard let _ = try? decodes(shops: maybeArray, context: context) else {
+        fatalError("Unable to decode a JSON")
+    }
+    
+    // Save the context
+    saveContext(context: context)
+    
+    return true
 }
 
 
