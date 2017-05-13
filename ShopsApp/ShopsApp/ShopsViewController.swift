@@ -58,7 +58,6 @@ class ShopsViewController: UIViewController {
             }
         }
     }
-    
 }
 
 

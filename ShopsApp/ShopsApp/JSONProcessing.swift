@@ -148,7 +148,6 @@ func validate(dictionary dict: JSONDictionary) throws{
     try isMissing()
 }
 
-
 //MARK: - Parsing
 //At the moment it is not needed, but it is left by itself in the future it is necessary l to include more fields of a shop
 func parseCommaSeparated(string s: String)->[String]{
