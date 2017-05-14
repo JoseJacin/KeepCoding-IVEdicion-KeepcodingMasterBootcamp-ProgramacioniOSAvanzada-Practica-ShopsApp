@@ -21,5 +21,4 @@ A continuación se describen las partes que se han desarrollado (con el check ma
 - [X] La pantalla del detalle de la tienda debe mostrar el nombre de la tienda, la descripción, la dirección y un mapa que muestra la ubicación de las tiendas sin ningún tipo de pin
 
 ## Enlaces de interes
-ShopsViewController+NSFetchResultController.swift EVERPOBRE
 Solución al problema de los datos duplicados en CoreDara: [Stackoverflow](http://stackoverflow.com/a/43129221/7837133)
