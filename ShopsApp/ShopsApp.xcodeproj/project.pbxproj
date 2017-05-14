@@ -83,22 +83,22 @@
 		DF7934531EC1697100132133 /* ShopsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DFAE00DA1EC0E13C00493399 /* ShopsViewController.swift */,
 				DF2950921EC1452700BC1479 /* ShopsViewController+NSFetchResultController.swift */,
-				DF7934511EC167D300132133 /* ShopsViewController+UITableView.swift */,
 				DF7934551EC169CA00132133 /* ShopsViewController+ShopTableViewCell.swift */,
 				DF79345E1EC1A38900132133 /* ShopsViewController+ShopsMapView.swift */,
+				DF7934511EC167D300132133 /* ShopsViewController+UITableView.swift */,
+				DFAE00DA1EC0E13C00493399 /* ShopsViewController.swift */,
 			);
-			name = ShopsViewController;
+			path = ShopsViewController;
 			sourceTree = "<group>";
 		};
 		DFAE00CC1EC0E13C00493399 = {
 			isa = PBXGroup;
 			children = (
 				DFAE00D71EC0E13C00493399 /* ShopsApp */,
-				DFAE00D61EC0E13C00493399 /* Products */,
-				E4B6C9976A44AD4B5AD0255B /* Pods */,
 				87E9EC79C0873A163E787439 /* Frameworks */,
+				E4B6C9976A44AD4B5AD0255B /* Pods */,
+				DFAE00D61EC0E13C00493399 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,13 +113,13 @@
 		DFAE00D71EC0E13C00493399 /* ShopsApp */ = {
 			isa = PBXGroup;
 			children = (
-				DFAE00D81EC0E13C00493399 /* AppDelegate.swift */,
-				DFAE00ED1EC0E19B00493399 /* Controller */,
-				DFAE00EF1EC0E1C900493399 /* Model */,
-				DFAE00F11EC0E57600493399 /* Manager */,
-				DFAE00EE1EC0E1AC00493399 /* View */,
-				DFAE00F41EC0E73500493399 /* Utils */,
 				DFAE00F01EC0E1D300493399 /* Assets */,
+				DFAE00ED1EC0E19B00493399 /* Controller */,
+				DFAE00F11EC0E57600493399 /* Manager */,
+				DFAE00EF1EC0E1C900493399 /* Model */,
+				DFAE00F41EC0E73500493399 /* Utils */,
+				DFAE00EE1EC0E1AC00493399 /* View */,
+				DFAE00D81EC0E13C00493399 /* AppDelegate.swift */,
 				DFAE00E71EC0E13C00493399 /* Info.plist */,
 			);
 			path = ShopsApp;
@@ -128,48 +128,48 @@
 		DFAE00ED1EC0E19B00493399 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DF7934531EC1697100132133 /* ShopsViewController */,
 				DFB9B7051EC19DA3008CD29E /* ShopDetailViewController */,
+				DF7934531EC1697100132133 /* ShopsViewController */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		DFAE00EE1EC0E1AC00493399 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DFAE00DC1EC0E13C00493399 /* Main.storyboard */,
 				DFAE00E41EC0E13C00493399 /* LaunchScreen.storyboard */,
+				DFAE00DC1EC0E13C00493399 /* Main.storyboard */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		DFAE00EF1EC0E1C900493399 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DFAE00DF1EC0E13C00493399 /* ShopsApp.xcdatamodeld */,
 				DFAE00FB1EC0F15200493399 /* Shop+Utils.swift */,
+				DFAE00DF1EC0E13C00493399 /* ShopsApp.xcdatamodeld */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DFAE00F01EC0E1D300493399 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				DF79345A1EC1975400132133 /* Shop-Default.png */,
 				DFAE00E21EC0E13C00493399 /* Assets.xcassets */,
+				DF79345A1EC1975400132133 /* Shop-Default.png */,
 			);
-			name = Assets;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		DFAE00F11EC0E57600493399 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				DFAE00F21EC0E58C00493399 /* CoreDataManager.swift */,
 				DFAE00F71EC0EE7E00493399 /* AsyncData.swift */,
-				DFAE00F91EC0EF6900493399 /* JSONProcessing.swift */,
+				DFAE00F21EC0E58C00493399 /* CoreDataManager.swift */,
 				DFAE00FD1EC10D0F00493399 /* Errors.swift */,
+				DFAE00F91EC0EF6900493399 /* JSONProcessing.swift */,
 			);
-			name = Manager;
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		DFAE00F41EC0E73500493399 /* Utils */ = {
@@ -178,7 +178,7 @@
 				DFAE00F51EC0E74300493399 /* Constants.swift */,
 				DFF1C8301EC1981A0077135C /* MapPin.swift */,
 			);
-			name = Utils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		DFB9B7051EC19DA3008CD29E /* ShopDetailViewController */ = {
@@ -186,7 +186,7 @@
 			children = (
 				DFB9B7031EC19D9F008CD29E /* ShopDetailViewController.swift */,
 			);
-			name = ShopDetailViewController;
+			path = ShopDetailViewController;
 			sourceTree = "<group>";
 		};
 		E4B6C9976A44AD4B5AD0255B /* Pods */ = {
@@ -355,6 +355,7 @@
 				DFAE00DD1EC0E13C00493399 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		DFAE00E41EC0E13C00493399 /* LaunchScreen.storyboard */ = {
@@ -363,6 +364,7 @@
 				DFAE00E51EC0E13C00493399 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
